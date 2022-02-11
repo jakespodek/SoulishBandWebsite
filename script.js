@@ -6,22 +6,29 @@ app.upcomingShows = [
         city: "Toronto, ON",
         venue: "Lee's Palace",
     },
+    // {
+    //     date: "May 11, 2022",
+    //     city: "Example, ON",
+    //     venue: "Cool Place",
+    // },
 ];
 
 app.displayShows = () => {
     const showsList = document.getElementById("showsList");
 
-    showsList.innerHTML = `
-        <li>
-            <div class="flex justify-between items-center">
-                <p>${app.upcomingShows[0].date}</p>
-                <div>
-                    <p>${app.upcomingShows[0].city}</p>
-                    <p>${app.upcomingShows[0].venue}</p>
+    app.upcomingShows.forEach(show =>
+        showsList.innerHTML += `
+            <li class="mb-12">
+                <div class="flex justify-between items-center">
+                    <p>${show.date}</p>
+                    <div>
+                        <p>${show.city}</p>
+                        <p>${show.venue}</p>
+                    </div>
                 </div>
-            </div>
-        </li>
-    `;
+            </li>
+        `
+    );
 };
 
 app.init = () => {
