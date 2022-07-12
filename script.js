@@ -6,11 +6,11 @@ app.upcomingShows = [
         city: "Toronto, ON",
         venue: "Lee's Palace",
     },
-    // {
-    //     date: "May 11, 2022",
-    //     city: "Example, ON",
-    //     venue: "Cool Place",
-    // },
+    {
+        date: "May 11, 2022",
+        city: "Example, ON",
+        venue: "Cool Place",
+    },
 ];
 
 app.displayShows = () => {
