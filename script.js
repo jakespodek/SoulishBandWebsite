@@ -6,11 +6,6 @@ app.upcomingShows = [
         city: "Toronto, ON",
         venue: "Lee's Palace",
     },
-    {
-        date: "April 28, 2023",
-        city: "Toronto, ON",
-        venue: "Lee's Palace",
-    },
     // {
     //     date: "May 11, 2022",
     //     city: "Example, ON",
