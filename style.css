@@ -2,13 +2,15 @@ body {
   background-color: #000;
   font-family: sans-serif;
   color: #FFF;
+  padding: 0;
+  margin: 0;
 }
 
 div.container {
-  width: 800px;
+  width: 900px;
   height: 1200px;
   margin: 0 auto;
-  background-color: rgb(96, 67, 13);
+  background-color: rgb(51, 35, 5);
 }
 
 header {
@@ -49,4 +51,33 @@ div.hero {
 
 div.hero img {
   width: 100%;
+}
+
+div.columns {
+  display: flex;
+  justify-content: center;
+}
+
+div.columns div.left,
+div.columns div.right
+ {
+  width: 40%;
+}
+
+div.left {
+  margin-right: 40px;
+}
+
+div.columns p {
+  line-height: 1.2;
+}
+
+div.columns p span {
+  font-weight: bold;
+}
+
+div.redLine {
+  background-color: #af3c39;
+  height: 5px;
+  width: 200px;
 }
