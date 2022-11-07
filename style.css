@@ -8,7 +8,7 @@ body {
 
 div.container {
   width: 900px;
-  height: 1200px;
+  height: 1550px;
   margin: 0 auto;
   background-color: rgb(51, 35, 5);
   line-height: 1.2;
@@ -54,6 +54,14 @@ div.hero img {
   width: 100%;
 }
 
+div.soundcloud {
+  width: 100%;
+}
+
+div.soundcloud img {
+  width: 100%;
+}
+
 div.columns {
   display: flex;
   justify-content: center;
@@ -83,6 +91,13 @@ div.redLine {
   width: 200px;
 }
 
+div.redLineSolo {
+  background-color: #af3c39;
+  height: 5px;
+  width: 300px;
+  margin: 15px 0 15px 80px;
+}
+
 ul.links {
   line-height: 2;
   padding: 0;
@@ -92,4 +107,28 @@ ul.links a {
   color: white;
   text-decoration: none;
   font-size: 14px;
+}
+
+i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+div.vidContainer {
+  width: 900px;
+  display: flex;
+  align-items: center;
+}
+
+div.vidEmbed {
+  width: 650px;
+}
+
+div.vidEmbed img {
+  width: 100%;
+}
+
+div.vidContainer div:nth-child(2) {
+  margin-left: 20px;
+  font-size: 20px;
 }
