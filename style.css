@@ -11,6 +11,7 @@ div.container {
   height: 1200px;
   margin: 0 auto;
   background-color: rgb(51, 35, 5);
+  line-height: 1.2;
 }
 
 header {
@@ -69,7 +70,7 @@ div.left {
 }
 
 div.columns p {
-  line-height: 1.2;
+  font-size: 16px;
 }
 
 div.columns p span {
@@ -80,4 +81,15 @@ div.redLine {
   background-color: #af3c39;
   height: 5px;
   width: 200px;
+}
+
+ul.links {
+  line-height: 2;
+  padding: 0;
+}
+
+ul.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
 }
