@@ -122,6 +122,7 @@ div.vidContainer {
 
 div.vidEmbed {
   width: 650px;
+  margin-left: 70px;
 }
 
 div.vidEmbed img {
