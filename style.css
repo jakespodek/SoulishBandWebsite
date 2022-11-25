@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Esteban&family=Montserrat:ital,wght@0,400;0,900;1,400;1,600;1,900&family=Open+Sans:wght@400;800&display=swap');
+
 :root {
   --white: #F7F6EB;
   --darkgrey: #282724;
@@ -7,11 +9,49 @@
 
 body {
   background-color: #000;
-  font-family: sans-serif;
   color: var(--white);
   padding: 0;
   margin: 0;
 }
+
+/* fonts */
+ul.members,
+p.vidtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 36px;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+
+p.viddate {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  font-style: italic;
+}
+
+p.vidlocation {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+div.columns p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+div.columns p span {
+  font-weight: 800;
+}
+
+ul.links a {
+  font-family: 'Esteban', serif;
+  font-size: 14px;
+}
+
+/* ---- */
 
 div.container {
   width: 900px;
@@ -20,6 +60,7 @@ div.container {
   background-color: var(--darkgrey);
   line-height: 1.2;
   position: relative;
+  z-index: 2;
 }
 
 div.repeatLogo1,
@@ -27,7 +68,7 @@ div.repeatLogo2 {
   width: 25%;
   height: 60%;
   position: absolute;
-  z-index: 1;
+  z-index: -1;
 }
 
 div.repeatLogo1 {
@@ -49,7 +90,6 @@ div.repeatLogo2 img {
 header {
   position: relative;
   display: flex;
-  /* border: 1px solid red; */
   z-index: 2;
 }
 
@@ -69,9 +109,6 @@ ul {
 }
 
 ul.members {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 36px;
   margin-top: 200px;
   margin-right: 20px;
   text-align: right;
@@ -110,14 +147,6 @@ div.left {
   margin-right: 40px;
 }
 
-div.columns p {
-  font-size: 16px;
-}
-
-div.columns p span {
-  font-weight: bold;
-}
-
 div.redLine {
   background-color: var(--red);
   height: 3px;
@@ -139,12 +168,17 @@ ul.links {
 ul.links a {
   color: white;
   text-decoration: none;
-  font-size: 14px;
 }
 
 i {
   margin-right: 10px;
   font-size: 18px;
+}
+
+.fa-instagram,
+.fa-envelope {
+  margin-right: 12px;
+  padding-left: 3px;
 }
 
 div.vidContainer {
@@ -164,5 +198,6 @@ div.vidEmbed img {
 
 div.vidContainer div:nth-child(2) {
   margin-left: 20px;
-  font-size: 20px;
+  line-height: 0.2;
+  z-index: 2;
 }
