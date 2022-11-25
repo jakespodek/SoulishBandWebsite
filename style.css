@@ -55,7 +55,7 @@ ul.links a {
 
 div.container {
   width: 1000px;
-  height: 1550px;
+  height: 1700px;
   margin: 0 auto;
   background-color: var(--darkgrey);
   line-height: 1.2;
@@ -183,7 +183,8 @@ i {
 }
 
 .fa-instagram,
-.fa-envelope {
+.fa-envelope,
+.fa-tiktok {
   margin-right: 12px;
   padding-left: 3px;
 }
