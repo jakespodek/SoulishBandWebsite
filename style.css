@@ -54,13 +54,14 @@ ul.links a {
 /* ---- */
 
 div.container {
-  width: 900px;
+  width: 1000px;
   height: 1550px;
   margin: 0 auto;
   background-color: var(--darkgrey);
   line-height: 1.2;
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 
 div.repeatLogo1,
@@ -72,12 +73,12 @@ div.repeatLogo2 {
 }
 
 div.repeatLogo1 {
-  top: 0;
+  top: 10px;
   left: 0;
 }
 
 div.repeatLogo2 {
-  bottom: 0;
+  bottom: -80px;
   right: 0;
 }
 
@@ -95,9 +96,9 @@ header {
 
 h1 {
   position: absolute;
-  width: 300px;
-  top: 20px;
-  left: 20px;
+  width: 550px;
+  top: 30px;
+  left: 50px;
 }
 
 h1 img {
@@ -109,23 +110,29 @@ ul {
 }
 
 ul.members {
-  margin-top: 200px;
-  margin-right: 20px;
+  /* margin-top: 200px;
+  margin-right: 40px; */
+  margin: 200px 16px 0 10px;
   text-align: right;
 }
 
+ul.members div.redLine {
+  margin-top: 20px;
+}
+
 div.hero {
-  width: 600px;
-  padding: 0 0 20px 20px;
-  margin-left: auto;
+  width: 700px;
+  padding: 0 0 10px 20px;
 }
 
 div.hero img {
-  width: 100%;
+  width: 102%;
+  /* border: 1px solid red; */
 }
 
 div.soundcloud {
   width: 100%;
+  margin-top: 30px;
 }
 
 div.soundcloud img {
@@ -157,7 +164,7 @@ div.redLineSolo {
   background-color: var(--red);
   height: 3px;
   width: 300px;
-  margin: 15px 0 15px 80px;
+  margin: 15px 0 15px 125px;
 }
 
 ul.links {
@@ -188,8 +195,9 @@ div.vidContainer {
 }
 
 div.vidEmbed {
-  width: 650px;
+  width: 610px;
   margin-left: 70px;
+  margin-right: -30px;
 }
 
 div.vidEmbed img {
@@ -197,7 +205,6 @@ div.vidEmbed img {
 }
 
 div.vidContainer div:nth-child(2) {
-  margin-left: 20px;
   line-height: 0.2;
   z-index: 2;
 }
