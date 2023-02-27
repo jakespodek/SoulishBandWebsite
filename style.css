@@ -183,7 +183,6 @@ i {
 }
 
 .fa-envelope,
-.fa-tiktok,
 .fa-bandcamp,
 .fa-spotify {
   margin-right: 12px;
@@ -191,7 +190,8 @@ i {
 }
 
 .fa-apple,
-.fa-instagram {
+.fa-instagram,
+.fa-tiktok {
   margin-right: 12px;
   padding-left: 5px;
 }
