@@ -1,40 +1,24 @@
 const app = {};
-
 app.sheetID = '1joDvSsXHNv70XpwPRGjgNn9pDMEfnbvIB_ogXiag8tA';
 app.base = `https://docs.google.com/spreadsheets/d/${app.sheetID}/gviz/tq?`;
-app.sheetName = 'shows';
 app.query = encodeURIComponent('Select *');
-app.url = `${app.base}&sheet=${app.sheetName}&tq=${app.query}`;
 
-app.links = [
-    {name: 'spotify', url: 'https://open.spotify.com/artist/1urqcRSioOrL86IoxS1J5P', isActive: true},
-    {name: 'applemusic', url: 'https://music.apple.com/ca/artist/soulish/1500136109', isActive: false},
-    {name: 'soundcloud', url: 'https://soundcloud.com/soulish-band/', isActive: false},
-    {name: 'bandcamp', url: 'https://soulishband.bandcamp.com/', isActive: false},
-    {name: 'facebook', url: 'https://www.facebook.com/pages/category/Musician-band/Soulish-378186969413040/', isActive: true},
-    {name: 'instagram', url: 'https://www.instagram.com/soulish_inc/', isActive: true},
-    {name: 'tiktok', url: 'https://www.tiktok.com/@_soulish/', isActive: false},
-    {name: 'youtube', url: 'https://www.youtube.com/channel/UCQElp0USJD3VEh56v6cXkpQ/videos', isActive: true},
-    {name: 'etsy', url: 'https://www.etsy.com/ca/shop/SoulishStore/', isActive: false}
-]
-
-app.links.forEach(link => {if(link.isActive) document.getElementById(link.name).href = link.url;})
-
-app.fetchShows = async () => {
+app.fetchData = async (sheet) => {
+    const url = `${app.base}&sheet=${sheet}&tq=${app.query}`;
     try {
-        const response = (await fetch(app.url)).text();
+        const response = (await fetch(url)).text();
         const data = JSON.parse((await response).slice(47, -2)).table;
         return data;
     } catch (error) {
         console.error('Error fetching data:', error);
     }
-}
+};
 
-app.renderShows = async () => {
+app.getShows = async () => {
     const showsList = document.getElementById("showsList");
-    const data = await app.fetchShows();
-    const rows = data.rows;
-    rows.forEach(row => {
+    const data = await app.fetchData('shows');
+    const shows = data.rows;
+    shows.forEach(row => {
         showsList.innerHTML += `
             <li class="mb-12">
                 <div class="flex justify-between">
@@ -46,10 +30,19 @@ app.renderShows = async () => {
             </li>
         `
     })
+};
+
+app.getLinks = async () => {
+    const data = await app.fetchData('links');
+    const links = data.rows.filter(row => row.c[1].v);
+    links.forEach(link => {
+        document.getElementById(link.c[0].v).href = link.c[2].v;
+    })
 }
 
 app.init = () => {
-    app.renderShows();
+    app.getShows();
+    app.getLinks();
 };
 
 app.init();
