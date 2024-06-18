@@ -40,9 +40,17 @@ app.getLinks = async () => {
     })
 }
 
+app.getBio = async () => {
+    const about = document.getElementById("about");
+    const data = await app.fetchData('bio');
+    const bio = data.rows;
+    bio.forEach(p => {about.innerHTML += `<p class="mt-4">${p.c[1].v}</p>`})
+}
+
 app.init = () => {
     app.getShows();
     app.getLinks();
+    app.getBio();
 };
 
 app.init();
