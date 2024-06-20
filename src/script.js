@@ -25,7 +25,7 @@ app.getShows = async () => {
                     <p>${row.c[0].f}</p>
                     <p>${row.c[1].v}</p>
                     <p>${row.c[2].v}</p>
-                    <p><a href="${row.c[3].v}" target="_blank">Tickets</a></p>
+                    <p class="hover:underline"><a href="${row.c[3].v}" target="_blank">Tickets</a></p>
                 </div>
             </li>
         `
