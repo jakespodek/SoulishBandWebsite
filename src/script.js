@@ -36,8 +36,10 @@ app.getLinks = async () => {
     const data = await app.fetchData('links');
     const links = data.rows.filter(row => row.c[1].v);
     links.forEach(link => {
-        document.getElementById(link.c[0].v).href = link.c[2].v;
+        let linkGroup = document.getElementsByClassName(`${link.c[0].v}`);
+        [...linkGroup].forEach(a => a.href = link.c[2].v)
     })
+
 }
 
 app.getBio = async () => {
