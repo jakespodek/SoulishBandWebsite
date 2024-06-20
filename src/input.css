@@ -5,3 +5,12 @@
 p span {
     font-weight: bold;
 }
+
+a {
+    transition: color 0.2s ease-out 0.1s;
+}
+
+a:focus,
+a:hover {
+    color: #6bd6e2;
+}
