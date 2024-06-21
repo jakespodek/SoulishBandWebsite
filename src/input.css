@@ -12,6 +12,6 @@ a {
 
 a:focus,
 a:hover,
-span {
+#about span {
     color: #6bd6e2;
 }
