@@ -12,36 +12,38 @@
     <title>Soulish</title>
 </head>
 
-<body class="bg-black text-white font-mono">
-    <div class="container mx-auto px-[10vw] lg:px-[5vw]">
-        <header id="top" class="mb-20 pt-8 text-xl md:flex md:justify-between md:items-center uppercase">
-            <nav>
+<body class="bg-black text-white font-mono tracking-wide">
+    <div class="container mx-auto">
+        <header id="top" class="mb-8 pt-2 text-xl uppercase mx-auto w-11/12 md:flex md:justify-between md:items-center">
+            <nav class="w-4/12">
                 <ul class="flex mx-auto w-full justify-between">
-                    <a href="#about" class="md:ml-[5vw]"><li>About</li></a>
-                    <a href="#shows" class="md:ml-[5vw]"><li>Shows</li></a>
-                    <a href="#contact" class="md:ml-[5vw]"><li>Contact</li></a>
-                    <a href="https://www.etsy.com/ca/shop/SoulishStore/" target="_blank" class="md:ml-[5vw]"><li>Merch</li></a>
+                    <a href="#about"><li>About</li></a>
+                    <a href="#shows" class="md:ml-8"><li>Shows</li></a>
+                    <a href="#contact" class="md:ml-8"><li>Contact</li></a>
+                    <a href="https://www.etsy.com/ca/shop/SoulishStore/" target="_blank" class="md:ml-8"><li>Merch</li></a>
                 </ul>
             </nav>
-            <div class="w-1/2 mx-auto mb-8 md:mb-0 md:w-1/4 md:mx-0">
+            <div class="w-3/12 mx-auto">
                 <img src="../assets/logo.png" alt="Soulish logo" class="w-full">
             </div>
-            <ul class="flex justify-between w-3/4 sm:w-1/2 lg:w-1/4 text-2xl">
+            <ul class="flex justify-between w-4/12 text-2xl">
                 <li><a class="spotify" target="_blank"><i class="fa-brands fa-spotify" alt="Spotify"></i></a></li>
+                <li><a class="applemusic" target="_blank"><i class="fa-brands fa-itunes-note" alt="Apple Music"></i></a></li>
+                <li><a class="instagram" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
+                <li><a class="tiktok" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
                 <li><a class="youtube" target="_blank"><i class="fa-brands fa-youtube" alt="YouTube"></i></a></li>
                 <li><a class="facebook" target="_blank"><i class="fa-brands fa-facebook-f" alt="Facebook"></i></a></li>
-                <li><a class="instagram" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
             </ul>
         </header>
-        <main class="flex flex-col items-center">
-            <div id="about" class="flex flex-col items-center mb-20 pt-2 w-7/12">
-                <div class="w-3/4">
+        <main class="flex flex-col items-center border border-red-500">
+            <div id="about" class="flex flex-col items-center mb-20 pt-2">
+                <div class="w-2/5">
                     <img src="../assets/pcl.jpg" alt="band members" class="w-full max-w-2xl rounded-xl mb-4 mx-auto">
                 </div>
                 <!-- band bio goes here -->
             </div>
-            <div id="shows" class="mb-20 pt-2 w-full uppercase">
-                <h2 class="font-medium text-3xl text-center mb-8">Upcoming Shows</h2>
+            <div id="shows" class="mb-20 pt-2 w-full uppercase border border-red-500">
+                <h2 class="text-3xl text-center mb-8">Upcoming Shows</h2>
                 <ul id="showsList" class="mx-auto text-lg sm:w-3/4 lg:w-1/2 2xl:w-1/3">
                     <!-- list of upcoming shows -->
                 </ul>
@@ -54,18 +56,23 @@
                 </iframe>
             </div>
             <div id="contact" class="mb-12 text-center">
-                <h2 class="font-medium text-3xl mb-8 uppercase">Contact</h2>
+                <h2 class="text-3xl mb-8 uppercase">Contact</h2>
                 <a href="mailto:soulishband@gmail.com" class="text-lg">soulishband@gmail.com</a>
             </div>
         </main>
         <footer class="flex flex-col items-center pb-8">
             <ul class="flex justify-between w-3/4 sm:w-1/2 lg:w-1/4 mb-12 text-2xl lg:mb-20">
                 <li><a class="spotify" target="_blank"><i class="fa-brands fa-spotify" alt="Spotify"></i></a></li>
+                <li><a class="applemusic" target="_blank"><i class="fa-brands fa-itunes-note" alt="Apple Music"></i></a></li>
+                <li><a class="instagram" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
+                <li><a class="tiktok" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
                 <li><a class="youtube" target="_blank"><i class="fa-brands fa-youtube" alt="YouTube"></i></a></li>
                 <li><a class="facebook" target="_blank"><i class="fa-brands fa-facebook-f" alt="Facebook"></i></a></li>
-                <li><a class="instagram" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
+                <li><a class="soundcloud" target="_blank"><i class="fa-brands fa-soundcloud" alt="Soundcloud"></i></i></a></li>
+                <li><a class="bandcamp" target="_blank"><i class="fa-brands fa-bandcamp" alt="Bandcamp"></i></a></li>
+                <li><a class="etsy" target="_blank"><i class="fa-brands fa-etsy" alt="Etsy"></i></a></li>
             </ul>
-            <a href="#top"><img src="../assets/logo.png" alt="Soulish logo" class="w-1/3 mx-auto"></a>
+            <a href="#top"><img src="../assets/logo.png" alt="Soulish logo" class="w-1/4 mx-auto"></a>
         </footer>
     </div>
     <script async src="./script.js"></script>

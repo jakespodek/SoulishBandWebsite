@@ -593,6 +593,11 @@ video {
   margin-right: auto;
 }
 
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
 .mb-12 {
   margin-bottom: 3rem;
 }
@@ -611,6 +616,14 @@ video {
 
 .mt-4 {
   margin-top: 1rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .flex {
@@ -641,6 +654,78 @@ video {
   width: 100%;
 }
 
+.w-\[90vw\] {
+  width: 90vw;
+}
+
+.w-\[80vw\] {
+  width: 80vw;
+}
+
+.w-\[85vw\] {
+  width: 85vw;
+}
+
+.w-\[95vw\] {
+  width: 95vw;
+}
+
+.w-11\/12 {
+  width: 91.666667%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-2\/12 {
+  width: 16.666667%;
+}
+
+.w-1\/5 {
+  width: 20%;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
+.w-2\/5 {
+  width: 40%;
+}
+
+.w-3\/12 {
+  width: 25%;
+}
+
+.w-4\/12 {
+  width: 33.333333%;
+}
+
+.w-8\/12 {
+  width: 66.666667%;
+}
+
+.w-3\/5 {
+  width: 60%;
+}
+
+.w-9\/12 {
+  width: 75%;
+}
+
+.w-6\/12 {
+  width: 50%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -665,6 +750,15 @@ video {
   border-radius: 0.75rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
+.border-red-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(239 68 68 / var(--tw-border-opacity));
+}
+
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -673,6 +767,11 @@ video {
 .px-\[10vw\] {
   padding-left: 10vw;
   padding-right: 10vw;
+}
+
+.px-\[5vw\] {
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 .pb-8 {
@@ -685,6 +784,10 @@ video {
 
 .pt-8 {
   padding-top: 2rem;
+}
+
+.pt-0 {
+  padding-top: 0px;
 }
 
 .text-center {
@@ -721,6 +824,22 @@ video {
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.tracking-wide {
+  letter-spacing: 0.025em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.05em;
+}
+
+.tracking-tighter {
+  letter-spacing: -0.05em;
+}
+
+.tracking-widest {
+  letter-spacing: 0.1em;
 }
 
 .text-white {
@@ -768,6 +887,18 @@ span {
 
   .md\:ml-\[5vw\] {
     margin-left: 5vw;
+  }
+
+  .md\:ml-4 {
+    margin-left: 1rem;
+  }
+
+  .md\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
+  .md\:ml-8 {
+    margin-left: 2rem;
   }
 
   .md\:flex {

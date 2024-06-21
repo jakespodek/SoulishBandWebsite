@@ -46,7 +46,7 @@ app.getBio = async () => {
     const about = document.getElementById("about");
     const data = await app.fetchData('bio');
     const bio = data.rows;
-    bio.forEach(p => {about.innerHTML += `<p class="mt-4">${p.c[1].v}</p>`})
+    bio.forEach(p => {about.innerHTML += `<p class="mt-4 w-1/2">${p.c[1].v}</p>`})
 }
 
 app.init = () => {
