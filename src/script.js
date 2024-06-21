@@ -22,10 +22,14 @@ app.getShows = async () => {
         showsList.innerHTML += `
             <li class="mb-12">
                 <div class="flex justify-between">
-                    <p>${row.c[0].f}</p>
+                    <p class="text-soulblue">${row.c[0].f}</p>
                     <p>${row.c[1].v}</p>
                     <p>${row.c[2].v}</p>
-                    <p><a href="${row.c[3].v}" target="_blank">Tickets</a></p>
+                    <a class="bg-white text-black rounded uppercase p-2 font-bold hover:bg-soulblue focus:bg-soulblue" 
+                        href="${row.c[3].v}" 
+                        target="_blank">
+                        Tickets
+                    </a>
                 </div>
             </li>
         `

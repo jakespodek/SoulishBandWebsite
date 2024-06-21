@@ -15,3 +15,8 @@ a:hover,
 #about span {
     color: #6bd6e2;
 }
+
+#showsList a:hover,
+#showsList a:focus {
+    color: black;
+}
