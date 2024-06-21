@@ -18,7 +18,7 @@ app.getShows = async () => {
     const showsList = document.getElementById("showsList");
     const data = await app.fetchData('shows');
     const shows = data.rows;
-    shows.length > 1 ?
+    shows[0].c[0].v !== "Date" ?
         shows.forEach(row => {
             showsList.innerHTML += `
                 <li class="mb-12">
