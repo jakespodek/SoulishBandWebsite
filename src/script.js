@@ -18,34 +18,36 @@ app.getShows = async () => {
     const showsList = document.getElementById("showsList");
     const data = await app.fetchData('shows');
     const shows = data.rows;
-    shows.forEach(row => {
-        showsList.innerHTML += `
-            <li class="mb-12">
-                <div class="flex relative">
-                    <p class="text-soulblue min-h-11 p-2 basis-1/4">${row.c[0].f}</p>
-                    <p class="min-h-11 p-2 basis-1/4">${row.c[1].v}</p>
-                    <p class="min-h-11 p-2 basis-1/4">${row.c[2].v}</p>
-                    <a 
-                        class="
-                            bg-white 
-                            text-black
-                            hover:bg-soulblue 
-                            focus:bg-soulblue
-                            rounded 
-                            uppercase 
-                            font-bold
-                            p-2
-                            absolute 
-                            right-0
-                        " 
-                        href="${row.c[3].v}" 
-                        target="_blank">
-                        Tickets
-                    </a>
-                </div>
-            </li>
-        `
-    })
+    shows.length > 1 ?
+        shows.forEach(row => {
+            showsList.innerHTML += `
+                <li class="mb-12">
+                    <div class="flex relative">
+                        <p class="text-soulblue min-h-11 p-2 basis-1/4">${row.c[0].f}</p>
+                        <p class="min-h-11 p-2 basis-1/4">${row.c[1].v}</p>
+                        <p class="min-h-11 p-2 basis-1/4">${row.c[2].v}</p>
+                        <a 
+                            class="
+                                bg-white 
+                                text-black
+                                hover:bg-soulblue 
+                                focus:bg-soulblue
+                                rounded 
+                                uppercase 
+                                font-bold
+                                p-2
+                                absolute 
+                                right-0
+                            " 
+                            href="${row.c[3].v}" 
+                            target="_blank">
+                            Tickets
+                        </a>
+                    </div>
+                </li>
+            `
+        })
+    : showsList.innerHTML = "<p class='text-center'>Stay tuned for show announcements!</p>"
 };
 
 app.getLinks = async () => {
