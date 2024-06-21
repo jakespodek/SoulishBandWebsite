@@ -14,7 +14,7 @@
 
 <body class="bg-black text-white font-mono tracking-wide">
     <div class="container mx-auto flex flex-col min-h-svh">
-        <header id="top" class="mb-7 pt-2 text-xl uppercase mx-auto w-11/12 md:flex md:justify-between md:items-center">
+        <header id="top" class="mb-8 pt-2 text-xl uppercase mx-auto w-11/12 md:flex md:justify-between md:items-center">
             <nav class="w-4/12">
                 <ul class="flex mx-auto w-full justify-between">
                     <a href="./about.html"><li>About</li></a>
@@ -24,7 +24,9 @@
                 </ul>
             </nav>
             <div class="w-3/12 mx-auto">
-                <img src="../assets/logo.png" alt="Soulish logo" class="w-full">
+                <a href="./index.html">
+                    <img src="../assets/logo.png" alt="Soulish logo" class="w-full">
+                </a>
             </div>
             <ul class="flex justify-between w-4/12 text-2xl">
                 <li><a class="spotify" target="_blank"><i class="fa-brands fa-spotify" alt="Spotify"></i></a></li>
@@ -35,19 +37,11 @@
                 <li><a class="etsy" target="_blank"><i class="fa-brands fa-etsy" alt="Etsy"></i></a></li>
             </ul>
         </header>
-        <main class="flex flex-col items-center flex-grow">
-            <div class="flex flex-col items-center mb-20 pt-2">
-                <div class="w-3/4">
-                    <img src="../assets/pcl.jpg" alt="band members" class="w-full max-w-2xl rounded-xl mb-4 mx-auto">
-                </div>
-                <p class="uppercase">New single Purple Coloured Liquids now streaming!</p>
-            </div>
-            <div class="mb-20 w-1/2">
-                <iframe allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" frameborder="0" height="175"
-                    style="width:100%;max-width:660px;overflow:hidden;border-radius:10px;"
-                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
-                    src="https://embed.music.apple.com/ca/album/purple-coloured-liquids/1752321582?i=1752321584">
-                </iframe>
+        <main class="flex flex-col items-center mb-auto flex-grow">
+            <div id="contact" class="mb-12 text-center">
+                <h2 class="text-3xl mb-8 uppercase">Contact</h2>
+                <h3 class="text-xl mt-16 mb-8">Send us an email!</h3>
+                <a href="mailto:soulishband@gmail.com" class="text-2xl">soulishband@gmail.com</a>
             </div>
         </main>
         <footer class="flex flex-col items-center pb-8">
@@ -62,7 +56,7 @@
                 <li><a class="bandcamp" target="_blank"><i class="fa-brands fa-bandcamp" alt="Bandcamp"></i></a></li>
                 <li><a class="etsy" target="_blank"><i class="fa-brands fa-etsy" alt="Etsy"></i></a></li>
             </ul>
-            <a href="#top"><img src="../assets/logo.png" alt="Soulish logo" class="w-1/5 mx-auto"></a>
+            <a href="./index.html"><img src="../assets/logo.png" alt="Soulish logo" class="w-1/5 mx-auto"></a>
         </footer>
     </div>
     <script async src="./script.js"></script>
