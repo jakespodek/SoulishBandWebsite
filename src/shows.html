@@ -15,7 +15,7 @@
 <body class="bg-black text-white font-mono tracking-wide">
     <div class="container mx-auto flex flex-col min-h-svh">
         <header id="top" class="mb-7 pt-2 text-xl uppercase mx-auto w-11/12 md:flex md:justify-between md:items-center">
-            <nav class="w-4/12">
+            <nav class="w-1/3 hidden lg:block">
                 <ul class="flex mx-auto w-full justify-between">
                     <a href="./about.html"><li>About</li></a>
                     <a href="./music.html" class="md:ml-8"><li>Music</li></a>
@@ -23,12 +23,12 @@
                     <a href="./contact.html" class="md:ml-8"><li>Contact</li></a>
                 </ul>
             </nav>
-            <div class="lg:w-1/5 w-1/2 mx-auto">
+            <div class="lg:w-1/5 w-1/3 mt-4 lg:mt-0 mx-auto">
                 <a href="./index.html">
                     <img src="assets/logo.png" alt="Soulish logo" class="w-full">
                 </a>
             </div>
-            <ul class="flex justify-between w-4/12 text-2xl">
+            <ul class="hidden lg:flex lg:justify-between w-1/3 text-2xl">
                 <li><a class="spotify" target="_blank"><i class="fa-brands fa-spotify" alt="Spotify"></i></a></li>
                 <li><a class="applemusic" target="_blank"><i class="fa-brands fa-itunes-note" alt="Apple Music"></i></a></li>
                 <li><a class="instagram" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
@@ -40,7 +40,7 @@
         <main class="flex flex-col items-center flex-grow">
             <div id="shows" class="mb-20 pt-2 w-full uppercase">
                 <h2 class="text-3xl text-center mt-4 mb-8">Upcoming Shows</h2>
-                <ul id="showsList" class="mx-auto text-lg p-20">
+                <ul id="showsList" class="mx-auto text-lg p-6 md:p-20">
                     <!-- list of upcoming shows -->
                 </ul>
             </div>
