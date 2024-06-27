@@ -60,8 +60,21 @@ app.getBio = async () => {
     bio.forEach(p => {about.innerHTML += `<p class="mt-4">${p.c[1].v}</p>`})
 }
 
+app.closeMobileNav = () => {
+    const navCheckbox = document.getElementById('check');
+    let mql = window.matchMedia("(min-width: 1024px)");
+
+    // on screen width change: if width >= 1024px and mobile nav is open, close the nav by unchecking the checkbox
+    mql.onchange = (e) => {
+        if (e.matches && navCheckbox.checked) {
+            navCheckbox.checked = false;
+        }
+    };
+}
+
 app.init = () => {
     app.getLinks();
+    app.closeMobileNav();
     if (document.querySelector('title').text === 'Shows') app.getShows();
     if (document.querySelector('title').text === 'About') app.getBio();
 };

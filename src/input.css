@@ -39,3 +39,73 @@ a img:hover {
 html {
     scrollbar-width: none;
 }
+
+.hamburger {
+    display: block;
+    position: relative;
+    cursor: pointer;
+    width: 50px;
+    height: 40px;
+}
+
+.hamburger span {
+    position: absolute;
+    width: 45px;
+    height: 7px;
+    background: white;
+    border-radius: 100px;
+    display: inline-block;
+    transition: 0.3s ease;
+    left: 0;
+}
+
+.hamburger span.top {
+    top: 0;
+}
+
+.hamburger span.middle {
+    top: 16px;
+}
+
+.hamburger span.bottom {
+    bottom: 0;
+}
+
+#check:checked ~ div label span.top {
+    transform: rotate(45deg);
+    transform-origin: top left;
+    width: 48px;
+    left: 5px;
+}
+
+#check:checked ~ div label span.middle {
+    transform: translateX(20px);
+    opacity: 0;
+}
+
+#check:checked ~ div label span.bottom {
+    transform: rotate(-45deg);
+    transform-origin: top left;
+    width: 48px;
+    bottom: -1px;
+}
+
+.mobileNav,
+main,
+footer {
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    transition-behavior: allow-discrete;
+}
+
+div #check:checked ~ .mobileNav {
+    opacity: 1;
+}
+
+div #check:checked ~ main,
+div #check:checked ~ footer {
+    opacity: 0;
+    z-index: -1;
+    /* height: 0; */
+    overflow: hidden;
+}
