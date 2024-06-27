@@ -7,6 +7,7 @@ app.fetchData = async (sheet) => {
     const url = `${app.base}&sheet=${sheet}&tq=${app.query}`;
     try {
         const response = (await fetch(url)).text();
+        // response is a string that needs to be cleaned up before parsing
         const data = JSON.parse((await response).slice(47, -2)).table;
         return data;
     } catch (error) {
@@ -18,6 +19,11 @@ app.getShows = async () => {
     const showsList = document.getElementById("showsList");
     const data = await app.fetchData('shows');
     const shows = data.rows;
+    // check if shows table is empty
+    // if shows table is empty, the response will contain only the column names
+        // shows[0].c[0].v will be "Date" and the "stay tuned" message will render
+    // if shows data is returned, it is heavily nested
+        // each shows row is array (c) of objects ([0]-[4]) containing unformatted (v) and sometimes formatted (f) data
     shows[0].c[0].v !== "Date" ?
         shows.forEach(row => {
             showsList.innerHTML += `
@@ -38,6 +44,9 @@ app.getLinks = async () => {
     const data = await app.fetchData('links');
     const links = data.rows.filter(row => row.c[1].v);
     links.forEach(link => {
+        // the relevant html links each have a class name that matches a value in the data
+        // getElementsByClassName returns HTMLCollections which are spread into arrays
+        // the arrays are looped over and href values are added from the fetched data
         let linkGroup = document.getElementsByClassName(`${link.c[0].v}`);
         [...linkGroup].forEach(a => a.href = link.c[2].v)
     })
