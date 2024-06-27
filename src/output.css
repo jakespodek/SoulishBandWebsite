@@ -669,6 +669,10 @@ video {
   top: 2rem;
 }
 
+.-z-50 {
+  z-index: -50;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -715,12 +719,12 @@ video {
   margin-top: 1rem;
 }
 
-.mt-8 {
-  margin-top: 2rem;
-}
-
 .mt-6 {
   margin-top: 1.5rem;
+}
+
+.mt-8 {
+  margin-top: 2rem;
 }
 
 .block {
@@ -809,10 +813,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.overflow-hidden {
-  overflow: hidden;
 }
 
 .scroll-smooth {
@@ -1002,6 +1002,7 @@ footer {
 
 div #check:checked ~ .mobileNav {
   opacity: 1;
+  z-index: 1;
 }
 
 div #check:checked ~ main,
@@ -1009,7 +1010,7 @@ div #check:checked ~ footer {
   opacity: 0;
   z-index: -1;
   /* height: 0; */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 @media (min-width: 640px) {
