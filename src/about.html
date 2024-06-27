@@ -6,10 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Soulish is a band from Toronto" />
-    <link href="../css/output.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="../assets/favicon.png">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
     <script src="https://kit.fontawesome.com/663bc49833.js" crossorigin="anonymous"></script>
-    <title>Soulish | Music</title>
+    <title>Soulish | About</title>
 </head>
 
 <body class="bg-black text-white font-mono tracking-wide">
@@ -25,7 +25,7 @@
             </nav>
             <div class="lg:w-1/5 w-1/3 mt-4 lg:mt-0 mx-auto">
                 <a href="./index.html">
-                    <img src="../assets/logo.png" alt="Soulish logo" class="w-full">
+                    <img src="assets/logo.png" alt="Soulish logo" class="w-full">
                 </a>
             </div>
             <ul class="hidden lg:flex lg:justify-between w-1/3 text-2xl">
@@ -38,17 +38,15 @@
             </ul>
         </header>
         <main class="flex flex-col items-center flex-grow">
-            <div id="shows" class="mb-12 pt-2 w-full uppercase">
-                <h2 class="text-3xl text-center mt-4 mb-8">Music</h2>
-                <div class="my-20 w-11/12 md:w-3/4 mx-auto flex flex-col justify-between items-center">            
-                    <iframe seamless class="w-[350px] h-[442px] mb-16"
-                        src="https://bandcamp.com/EmbeddedPlayer/track=941217179/size=large/bgcol=000000/linkcol=b628fa/tracklist=false/transparent=true/">
-                        <a href="https://soulishband.bandcamp.com/track/purple-coloured-liquids">Purple Coloured Liquids by Soulish</a>
-                    </iframe>
-                    <iframe seamless class="w-[350px] h-[555px]"
-                        src="https://bandcamp.com/EmbeddedPlayer/album=411041537/size=large/bgcol=000000/linkcol=6bd6e2/transparent=true/">
-                        <a href="https://soulishband.bandcamp.com/album/living-history">Living History by Soulish</a>
-                    </iframe>
+            <div class="flex flex-col items-center mb-20 pt-2">
+                <h2 class="text-xl md:text-3xl mt-4 mb-8 uppercase">Who puts the soul in Soulish?</h2>
+                <div class="lg:flex lg:justify-around items-center px-10 lg:px-0">
+                    <div id="about" class="w-full lg:w-1/2 mb-10 lg:mb-0">
+                        <!-- band bio goes here -->
+                    </div>
+                    <div class="w-full lg:w-2/5">
+                        <img src="assets/groupphoto.jpg" alt="band members" class="w-full max-w-2xl rounded-xl mb-4 mx-auto">
+                    </div>
                 </div>
             </div>
         </main>
@@ -64,11 +62,11 @@
                 <li><a class="bandcamp" target="_blank"><i class="fa-brands fa-bandcamp" alt="Bandcamp"></i></a></li>
                 <li><a class="etsy" target="_blank"><i class="fa-brands fa-etsy" alt="Etsy"></i></a></li>
             </ul>
-            <a href="./index.html" class="w-1/5 lg:w-1/6 xl:w-1/12 mx-auto"><img src="../assets/logo.png" alt="Soulish logo"></a>
+            <a href="./index.html" class="w-1/5 lg:w-1/6 xl:w-1/12 mx-auto"><img src="assets/logo.png" alt="Soulish logo"></a>
             <p class="mt-8 text-sm">Website by <a href="https://jakespodek.com" target="_blank">Jake Spodek</a></p>
         </footer>
     </div>
-    <script async src="../script.js"></script>
+    <script async src="./script.js"></script>
 </body>
 
 </html>
