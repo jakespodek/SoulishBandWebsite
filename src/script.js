@@ -52,9 +52,9 @@ app.getBio = async () => {
 }
 
 app.init = () => {
-    app.getShows();
     app.getLinks();
-    app.getBio();
+    if (document.querySelector('title').text === 'Shows') app.getShows();
+    if (document.querySelector('title').text === 'About') app.getBio();
 };
 
 app.init();
