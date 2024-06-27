@@ -25,6 +25,12 @@ a:hover,
     color: #6bd6e2;
 }
 
+i:hover,
+nav li:hover,
+a img:hover {
+    transform: scale(1.05);
+}
+
 #showsList a:hover,
 #showsList a:focus {
     color: black;
