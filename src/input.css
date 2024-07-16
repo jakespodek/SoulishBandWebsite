@@ -28,7 +28,7 @@ a:hover,
 i:hover,
 nav li:hover,
 a img:hover {
-    transform: scale(1.05);
+    transform: scale(1.01);
 }
 
 #showsList a:hover,
@@ -44,19 +44,18 @@ html {
     display: block;
     position: relative;
     cursor: pointer;
-    width: 50px;
-    height: 40px;
+    width: 20px;
+    height: 20px;
 }
 
 .hamburger span {
     position: absolute;
-    width: 45px;
-    height: 7px;
+    width: 24px;
+    height: 4px;
     background: white;
-    border-radius: 100px;
+    border-radius: 1px;
     display: inline-block;
-    transition: 0.3s ease;
-    left: 0;
+    transition: 0.4s ease;
 }
 
 .hamburger span.top {
@@ -64,7 +63,7 @@ html {
 }
 
 .hamburger span.middle {
-    top: 16px;
+    top: 8px;
 }
 
 .hamburger span.bottom {
@@ -74,8 +73,8 @@ html {
 #check:checked ~ div label span.top {
     transform: rotate(45deg);
     transform-origin: top left;
-    width: 48px;
-    left: 5px;
+    width: 28px;
+    top: -1px;
 }
 
 #check:checked ~ div label span.middle {
@@ -85,8 +84,8 @@ html {
 
 #check:checked ~ div label span.bottom {
     transform: rotate(-45deg);
-    transform-origin: top left;
-    width: 48px;
+    transform-origin: bottom left;
+    width: 28px;
     bottom: -1px;
 }
 
