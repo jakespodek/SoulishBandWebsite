@@ -60,21 +60,28 @@ app.getBio = async () => {
     bio.forEach(p => {about.innerHTML += `<p class="mt-4">${p.c[1].v}</p>`})
 }
 
-app.closeMobileNav = () => {
+app.mobileNav = () => {
     const navCheckbox = document.getElementById('check');
+    const body = document.querySelector('body');
     let mql = window.matchMedia("(min-width: 1024px)");
 
     // on screen width change: if width >= 1024px and mobile nav is open, close the nav by unchecking the checkbox
-    mql.onchange = (e) => {
+    mql.addEventListener('change', (e) => {
         if (e.matches && navCheckbox.checked) {
             navCheckbox.checked = false;
+            body.style.overflow = 'auto';
         }
-    };
+    });
+
+    // prevent scrolling when mobile nav is open
+    navCheckbox.addEventListener('change', () => {
+        body.style.overflow = navCheckbox.checked ? 'hidden' : 'auto';
+    });
 }
 
 app.init = () => {
     app.getLinks();
-    app.closeMobileNav();
+    app.mobileNav();
     if (document.querySelector('title').text === 'Shows') app.getShows();
     if (document.querySelector('title').text === 'About') app.getBio();
 };
