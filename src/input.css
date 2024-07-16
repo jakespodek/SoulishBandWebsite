@@ -55,7 +55,7 @@ html {
     background: white;
     border-radius: 1px;
     display: inline-block;
-    transition: 0.4s ease;
+    transition: 0.3s ease;
 }
 
 .hamburger span.top {
