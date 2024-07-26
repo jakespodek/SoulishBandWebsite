@@ -621,10 +621,10 @@ video {
   }
 }
 
-.ticketsButton {
+.button {
   border-radius: 0.25rem;
   --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(107 214 226 / var(--tw-bg-opacity));
   padding: 0.5rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -632,21 +632,26 @@ video {
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
-.ticketsButton:hover {
+.button:hover {
   --tw-bg-opacity: 1;
-  background-color: rgb(107 214 226 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.ticketsButton:focus {
+.button:focus {
   --tw-bg-opacity: 1;
-  background-color: rgb(107 214 226 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-@media (min-width: 640px) {
-  .ticketsButton {
-    position: absolute;
-    right: 0px;
-  }
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
 .absolute {
@@ -701,6 +706,10 @@ video {
 
 .mb-4 {
   margin-bottom: 1rem;
+}
+
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
 .mb-8 {
@@ -791,6 +800,14 @@ video {
   width: 100%;
 }
 
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-10\/12 {
+  width: 83.333333%;
+}
+
 .max-w-2xl {
   max-width: 42rem;
 }
@@ -841,6 +858,11 @@ video {
   padding-right: 2.5rem;
 }
 
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .pb-8 {
   padding-bottom: 2rem;
 }
@@ -888,6 +910,11 @@ video {
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
 .text-pclpurp {
@@ -1011,6 +1038,14 @@ div #check:checked ~ footer {
 }
 
 @media (min-width: 640px) {
+  .sm\:absolute {
+    position: absolute;
+  }
+
+  .sm\:right-0 {
+    right: 0px;
+  }
+
   .sm\:mb-0 {
     margin-bottom: 0px;
   }
@@ -1037,6 +1072,10 @@ div #check:checked ~ footer {
 
   .sm\:w-2\/5 {
     width: 40%;
+  }
+
+  .sm\:w-full {
+    width: 100%;
   }
 }
 

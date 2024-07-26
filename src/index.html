@@ -72,6 +72,21 @@
                     now streaming!
                 </p>
             </div>
+            <form action="/thanks.html" method="POST" name="mailingList" class="mx-auto mb-20" netlify>
+                <h2 class="text-center mx-auto uppercase mb-4 w-10/12 sm:w-full">Want to be the first to know what we're up to?</h2>
+                <h2 class="text-center mx-auto uppercase mb-10">Sign up for our mailing list!</h2>
+            
+                <label for="userEmail" class="sr-only">Enter your email:</label>
+                <input 
+                    type="email" 
+                    id="userEmail" 
+                    name="userEmail" 
+                    placeholder="Email Address" 
+                    class="mb-6 p-2 mx-auto block text-black" 
+                    required
+                >
+                <button type="submit" class="button block mx-auto">Sign up</button>
+            </form>
         </main>
         <footer class="flex flex-col items-center pb-8 lg:opacity-100">
             <ul class="flex justify-between w-3/4 sm:w-1/2 lg:w-1/3 mb-12 text-2xl">

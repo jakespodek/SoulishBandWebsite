@@ -32,7 +32,7 @@ app.getShows = async () => {
                         <p class="text-soulblue min-h-11 p-2 basis-1/4">${row.c[0].f}</p>
                         <p class="min-h-11 p-2 basis-1/4">${row.c[1].v}</p>
                         <p class="min-h-11 p-2 basis-1/4 mb-4 sm:mb-0">${row.c[2].v}</p>
-                        <a class="ticketsButton" href="${row.c[3].v}" target="_blank">Tickets</a>
+                        <a class="button sm:absolute sm:right-0" href="${row.c[3].v}" target="_blank">Tickets</a>
                     </div>
                 </li>
             `
