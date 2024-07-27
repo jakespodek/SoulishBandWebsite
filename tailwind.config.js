@@ -5,7 +5,8 @@ module.exports = {
     extend: {
       colors: {
         pclpurp: '#b628fa',
-        soulblue: '#6bd6e2'
+        soulblue: '#6bd6e2',
+        uturn: '#fc5102'
       }
     },
   },

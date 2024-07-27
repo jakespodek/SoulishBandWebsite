@@ -836,10 +836,6 @@ video {
   border-radius: 0.75rem;
 }
 
-.border {
-  border-width: 1px;
-}
-
 .bg-black {
   --tw-bg-opacity: 1;
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
@@ -899,12 +895,21 @@ video {
   line-height: 1.75rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
 
 .tracking-wide {
   letter-spacing: 0.025em;
+}
+
+.text-\[\#fc5102\] {
+  --tw-text-opacity: 1;
+  color: rgb(252 81 2 / var(--tw-text-opacity));
 }
 
 .text-black {
@@ -927,16 +932,17 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-uturn {
+  --tw-text-opacity: 1;
+  color: rgb(252 81 2 / var(--tw-text-opacity));
+}
+
 .opacity-0 {
   opacity: 0;
 }
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-span {
-  font-weight: bold;
 }
 
 a {
@@ -1032,6 +1038,52 @@ div #check:checked ~ footer {
   z-index: -1;
 }
 
+.hover\:border-2:hover {
+  border-width: 2px;
+}
+
+.hover\:border-4:hover {
+  border-width: 4px;
+}
+
+.hover\:border-\[3px\]:hover {
+  border-width: 3px;
+}
+
+.hover\:border-uturn:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(252 81 2 / var(--tw-border-opacity));
+}
+
+.hover\:border-pclpurp:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(182 40 250 / var(--tw-border-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:decoration-uturn:hover {
+  text-decoration-color: #fc5102;
+}
+
+.hover\:decoration-pclpurp:hover {
+  text-decoration-color: #b628fa;
+}
+
+.hover\:decoration-2:hover {
+  text-decoration-thickness: 2px;
+}
+
+.focus\:underline:focus {
+  text-decoration-line: underline;
+}
+
+.focus\:decoration-2:focus {
+  text-decoration-thickness: 2px;
+}
+
 @media (min-width: 640px) {
   .sm\:absolute {
     position: absolute;
@@ -1047,6 +1099,10 @@ div #check:checked ~ footer {
 
   .sm\:mb-12 {
     margin-bottom: 3rem;
+  }
+
+  .sm\:mt-10 {
+    margin-top: 2.5rem;
   }
 
   .sm\:mt-4 {
@@ -1067,6 +1123,10 @@ div #check:checked ~ footer {
 
   .sm\:w-2\/5 {
     width: 40%;
+  }
+
+  .sm\:w-3\/5 {
+    width: 60%;
   }
 
   .sm\:w-full {
@@ -1175,5 +1235,9 @@ div #check:checked ~ footer {
 @media (min-width: 1280px) {
   .xl\:w-1\/12 {
     width: 8.333333%;
+  }
+
+  .xl\:w-3\/4 {
+    width: 75%;
   }
 }

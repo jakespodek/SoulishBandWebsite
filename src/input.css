@@ -11,10 +11,6 @@
     }
 }
 
-span {
-    font-weight: bold;
-}
-
 a {
     transition: color 0.2s ease-out 0.1s;
 }
