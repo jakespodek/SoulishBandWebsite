@@ -917,11 +917,6 @@ video {
   color: rgb(182 40 250 / var(--tw-text-opacity));
 }
 
-.text-red-700 {
-  --tw-text-opacity: 1;
-  color: rgb(185 28 28 / var(--tw-text-opacity));
-}
-
 .text-soulblue {
   --tw-text-opacity: 1;
   color: rgb(107 214 226 / var(--tw-text-opacity));
@@ -937,9 +932,9 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-red-600 {
+.text-wickedgrey {
   --tw-text-opacity: 1;
-  color: rgb(220 38 38 / var(--tw-text-opacity));
+  color: rgb(185 182 181 / var(--tw-text-opacity));
 }
 
 .opacity-0 {
@@ -1057,6 +1052,11 @@ div #check:checked ~ footer {
   border-color: rgb(252 81 2 / var(--tw-border-opacity));
 }
 
+.hover\:border-wickedgrey:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(185 182 181 / var(--tw-border-opacity));
+}
+
 .hover\:underline:hover {
   text-decoration-line: underline;
 }
@@ -1067,6 +1067,10 @@ div #check:checked ~ footer {
 
 .hover\:decoration-uturn:hover {
   text-decoration-color: #fc5102;
+}
+
+.hover\:decoration-wickedgrey:hover {
+  text-decoration-color: #b9b6b5;
 }
 
 .hover\:decoration-2:hover {
@@ -1124,6 +1128,11 @@ div #check:checked ~ footer {
 
   .sm\:w-full {
     width: 100%;
+  }
+
+  .sm\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 }
 
