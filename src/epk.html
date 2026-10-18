@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Soulish is a band from Toronto" />
+    <link href="./output.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+    <script src="https://kit.fontawesome.com/663bc49833.js" crossorigin="anonymous"></script>
+    <title>EPK</title>
+</head>
+
+<body class="bg-black text-white font-mono tracking-wide">
+    <div class="container mx-auto flex flex-col min-h-svh relative">
+        <header id="top" class="header">
+            <nav class="w-1/3 hidden lg:block">
+                <ul class="flex mx-auto w-full justify-between">
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./music.html" class="md:ml-8 lg:ml-4">Music</a></li>
+                    <li><a href="./shows.html" class="md:ml-8 lg:ml-4">Shows</a></li>
+                    <li><a href="./epk.html" class="md:ml-8 lg:ml-4">EPK</a></li>
+                    <li><a href="./contact.html" class="md:ml-8 lg:ml-4">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="w-2/5 sm:w-1/3 lg:w-1/5 mt-4 lg:mt-0 mx-auto">
+                <a href="./index.html">
+                    <h1><img src="assets/logo.png" alt="Soulish logo" class="w-full"></h1>
+                </a>
+            </div>
+            <ul class="hidden lg:flex lg:justify-between w-1/3 text-2xl">
+                <li><a class="spotify" target="_blank"><i class="fa-brands fa-spotify" alt="Spotify"></i></a></li>
+                <li><a class="applemusic" target="_blank"><i class="fa-brands fa-itunes-note" alt="Apple Music"></i></a></li>
+                <li><a class="instagram" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
+                <li><a class="youtube" target="_blank"><i class="fa-brands fa-youtube" alt="YouTube"></i></a></li>
+                <li><a class="etsy" target="_blank"><i class="fa-brands fa-etsy" alt="Etsy"></i></a></li>
+            </ul>
+        </header>
+        <input type="checkbox" id="check" class="hidden">
+        <div class="absolute top-10 right-10 md:top-12 md:right-6 lg:hidden">
+            <label class="hamburger" for="check">
+                <span class="top"></span>
+                <span class="middle"></span>
+                <span class="bottom"></span>
+            </label>
+        </div>
+        <div class="mobileNav w-full absolute top-40 opacity-0 -z-50 lg:hidden">
+            <nav class="w-1/3 mx-auto">
+                <ul class="w-full text-2xl mb-16">
+                    <li class="mb-8 text-center"><a href="./about.html">About</a></li>
+                    <li class="mb-8 text-center"><a href="./music.html">Music</a></li>
+                    <li class="mb-8 text-center"><a href="./shows.html">Shows</a></li>
+                    <li class="mb-8 text-center"><a href="./epk.html">EPK</a></li>
+                    <li class="mb-8 text-center"><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <ul class="w-3/5 sm:w-2/5 text-2xl mx-auto flex justify-between">
+                <li><a class="spotify" target="_blank"><i class="fa-brands fa-spotify" alt="Spotify"></i></a></li>
+                <li><a class="applemusic" target="_blank"><i class="fa-brands fa-itunes-note" alt="Apple Music"></i></a></li>
+                <li><a class="instagram" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
+                <li><a class="youtube" target="_blank"><i class="fa-brands fa-youtube" alt="YouTube"></i></a></li>
+                <li><a class="etsy" target="_blank"><i class="fa-brands fa-etsy" alt="Etsy"></i></a></li>
+            </ul>
+        </div>
+        <main class="flex flex-col items-center flex-grow mt-6 sm:mt-4 lg:opacity-100 lg:z-50">
+            <div id="epk" class="mb-12 pt-2 w-full uppercase">
+                <h2 class="text-3xl text-center mt-4 mb-8">EPK</h2>
+            </div>
+        </main>
+        <footer class="flex flex-col items-center pb-8 lg:opacity-100">
+            <ul class="flex justify-between w-3/4 sm:w-1/2 lg:w-1/3 mb-12 text-2xl">
+                <li><a class="spotify" target="_blank"><i class="fa-brands fa-spotify" alt="Spotify"></i></a></li>
+                <li><a class="applemusic" target="_blank"><i class="fa-brands fa-itunes-note" alt="Apple Music"></i></a></li>
+                <li><a class="instagram" target="_blank"><i class="fa-brands fa-instagram" alt="Instagram"></i></a></li>
+                <li><a class="youtube" target="_blank"><i class="fa-brands fa-youtube" alt="YouTube"></i></a></li>
+                <li><a class="facebook" target="_blank"><i class="fa-brands fa-facebook-f" alt="Facebook"></i></a></li>
+                <li><a class="soundcloud" target="_blank"><i class="fa-brands fa-soundcloud" alt="Soundcloud"></i></i></a></li>
+                <li><a class="bandcamp" target="_blank"><i class="fa-brands fa-bandcamp" alt="Bandcamp"></i></a></li>
+                <li><a class="etsy" target="_blank"><i class="fa-brands fa-etsy" alt="Etsy"></i></a></li>
+            </ul>
+            <a href="./index.html" class="w-1/5 lg:w-1/6 xl:w-1/12 mx-auto"><img src="assets/logo.png" alt="Soulish logo"></a>
+            <p class="mt-8 text-sm">Website by <a href="https://jakespodek.com" target="_blank">Jake Spodek</a></p>
+        </footer>
+    </div>
+    <script async src="./script.js"></script>
+</body>
+
+</html>
