@@ -700,6 +700,10 @@ video {
   margin-bottom: 4rem;
 }
 
+.mb-2 {
+  margin-bottom: 0.5rem;
+}
+
 .mb-20 {
   margin-bottom: 5rem;
 }
@@ -796,12 +800,28 @@ video {
   width: 60%;
 }
 
+.w-40 {
+  width: 10rem;
+}
+
 .w-\[350px\] {
   width: 350px;
 }
 
 .w-full {
   width: 100%;
+}
+
+.w-1\/4 {
+  width: 25%;
+}
+
+.w-1\/6 {
+  width: 16.666667%;
+}
+
+.w-1\/2 {
+  width: 50%;
 }
 
 .max-w-2xl {
@@ -816,6 +836,10 @@ video {
   flex-basis: 25%;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -826,6 +850,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .scroll-smooth {
@@ -880,6 +908,16 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+.text-base {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
 .text-lg {
   font-size: 1.125rem;
   line-height: 1.75rem;
@@ -895,12 +933,21 @@ video {
   line-height: 1.75rem;
 }
 
+.text-5xl {
+  font-size: 3rem;
+  line-height: 1;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
 .uppercase {
   text-transform: uppercase;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .tracking-wide {
@@ -951,8 +998,17 @@ a {
 
 a:focus,
 a:hover,
-#about span {
+#about span,
+#epk span {
   color: #6bd6e2;
+}
+
+hr {
+  border: 1px solid#6bd6e2;
+}
+
+.fa-brands {
+  cursor: pointer;
 }
 
 i:hover,
@@ -1130,6 +1186,14 @@ div #check:checked ~ footer {
     width: 100%;
   }
 
+  .sm\:w-1\/4 {
+    width: 25%;
+  }
+
+  .sm\:w-1\/6 {
+    width: 16.666667%;
+  }
+
   .sm\:text-3xl {
     font-size: 1.875rem;
     line-height: 2.25rem;
@@ -1214,6 +1278,22 @@ div #check:checked ~ footer {
 
   .lg\:w-2\/5 {
     width: 40%;
+  }
+
+  .lg\:w-1\/12 {
+    width: 8.333333%;
+  }
+
+  .lg\:w-1\/4 {
+    width: 25%;
+  }
+
+  .lg\:w-3\/4 {
+    width: 75%;
+  }
+
+  .lg\:w-2\/3 {
+    width: 66.666667%;
   }
 
   .lg\:justify-between {

@@ -17,8 +17,17 @@ a {
 
 a:focus,
 a:hover,
-#about span {
+#about span,
+#epk span {
     color: #6bd6e2;
+}
+
+hr {
+    border: 1px solid#6bd6e2;
+}
+
+.fa-brands {
+    cursor: pointer;
 }
 
 i:hover,
